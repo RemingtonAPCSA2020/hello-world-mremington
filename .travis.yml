@@ -1,7 +1,9 @@
-jdk:
-  - openjdk11
-  - openjdk-ea
+language: java
+install: true
 
-matrix:
-  allow_failures:
-    - jdk: openjdk-ea
+os: linux
+dist: trusty
+jdk: oraclejdk8
+
+script:
+  - ./gradlew build --scan -s
