@@ -3,7 +3,8 @@ language: java
 jdk:
 - oraclejdk9
 
-script: ant build
+before_install:
+  - cd java
 
 # see https://blog.travis-ci.com/2014-12-17-faster-builds-with-container-based-infrastructure
 sudo: false
