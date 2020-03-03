@@ -1,8 +1,7 @@
-# This enables the 'defaults' to test java applications:
 language: java
-
-# We can specify a list of JDKs to be used for testing
-# A list of available JDKs in Trusty can be seed in:
-# https://docs.travis-ci.com/user/reference/xenial/#jvm-clojure-groovy-java-scala-support
+# use Java 8
 jdk:
- - openjdk8
+- oraclejdk8
+
+# see https://blog.travis-ci.com/2014-12-17-faster-builds-with-container-based-infrastructure
+sudo: false
